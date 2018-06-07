@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gst-nw-desktop</title>
+    <link rel="shortcut icon" type="image/png" href="static/logo.png" />
+  </head>
+  <body>
+    <div id="app"><a href="http://baidu.com/" >ddd</a></div>
+    <div><label id='stateus'></label></div>
+    <div><button onclick="onClick()">laod dll</button></div>
+    <script type="text/javascript">
+    	var onClick = function(){
+    		alert('start load demo.js')
+    		try{
+    			var demo = require('./dllApi/demo.js')
+    		}catch(err){
+    			alert(err);
+    		}
+    	}
+    	//var demo = require('dllApi/demo.js');
+    	// console.log(demo);
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
